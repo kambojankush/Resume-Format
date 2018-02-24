@@ -1,0 +1,180 @@
+\documentclass[a4paper,10pt]{article}
+%-----------------------------------------------------------
+\usepackage[top=0.75in, bottom=0.75in, left=0.55in, right=0.85in]{geometry}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{palatino}
+\usepackage{tabularx}
+\fontfamily{SansSerif}
+% http://ctan.org/pkg/enumitem
+\usepackage{enumitem}
+\selectfont
+
+\usepackage[T1]{fontenc}
+\usepackage
+%[ansinew]
+[utf8]
+{inputenc}
+
+\graphicspath{ {/} }
+
+\usepackage{color}
+\definecolor{mygrey}{gray}{0.75}
+\textheight=9.75in
+\raggedbottom
+
+\setlength{\tabcolsep}{0in}
+\newcommand{\isep}{-2 pt}
+\newcommand{\lsep}{-0.5cm}
+\newcommand{\psep}{-0.6cm}
+\renewcommand{\labelitemii}{$\circ$}
+
+\pagestyle{empty}
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+
+\newcommand{\resheading}[1]
+{{
+	\small \colorbox{mygrey}
+	{\begin{minipage}
+		{1.0\textwidth}
+		{\textbf{#1 \vphantom{p\^{E}}}}
+	\end{minipage}}
+}}
+
+\newcommand{\ressubheading}[3]
+{
+	\begin{tabular*}
+		{12.62in}
+		{l @{\extracolsep{\fill}} r}
+    	\textsc{{\textbf{#1}}} & \textsc{\textit{[#2]}}
+    	\\
+	\end{tabular*}
+	\vspace{-8pt}
+}
+%-----------------------------------------------------------
+
+\begin{document}
+	\begin{center}
+		\begin{Large}
+			{C A N D I D A T E\ \ \ N A M E} 
+		\end{Large} 
+		\\
+		DTU/2KXX/XX/XXX
+	\end{center}
+	\indent \hspace{10pt} mail-id@mail.com \hspace{300pt} +91-XXXXXXXXXX 
+	\\[-0.3cm]
+
+	\resheading{\textbf{ACADEMIC DETAILS} }
+	\\[\lsep]
+
+	%\begin{table}[ht!]
+	\begin{center}
+		\indent 
+		\begin{tabular}
+			{ l @{\hskip 0.15in} l @{\hskip 0.25in} l @{\hskip 0.25in}  l }
+			\hline
+			\textbf{Year} & \textbf{Degree / Examination} & \textbf{Institute} & \textbf{GPA / \%} \\
+			\hline
+			201X-Present & B.Tech in \_\_\_\_\_\_\_\_ Engineering & 
+			Delhi Technological University, Delhi & X.XX\\
+			201X & AISSCE/ICSE (XII) & 
+			School Name, City & XX.X\% \\
+			2013 & AISSE/ICSE (X) & 
+			School Name, City & XX.X\\
+			\hline
+		\end{tabular}
+	\end{center}
+%\end{table}
+
+	\resheading{\textbf{WORK EXPERIENCE} }\\[\lsep]
+	\\[-0.25cm]
+	\begin{itemize}
+		\item \textbf{Company X |  Summer Intern} \hspace{235pt} \emph{(May 20XX - Aug 20XX)}
+ 		\\ [0.1cm]
+ 		\emph{(Project: \textbf{Project Name}, Mentor: ----------)} \\[-0.6cm]
+    		\begin{itemize}\itemsep \isep
+				\item What key role you played.
+   				\item What was the impact of this role. 
+    			\item What other role did you played.
+    			\item What was the impact of this role.
+    			\item \underline{\textbf{Technologies Used:}} 
+    		\end{itemize}
+	\end{itemize}
+
+	\resheading{\textbf{ACADEMIC PROJECTS} }\\ [-0.45cm]
+	\begin{itemize}
+	
+		\item \textbf{Project Name}\\[\lsep]
+		\begin{itemize}[noitemsep,topsep=0pt]
+			\item Brief description of the project; What was your role if multi-member team. 
+			\item What was the end result of doing this project.
+		\end{itemize}
+
+		\item \textbf{Project Name}\\[\lsep]
+		\begin{itemize}[noitemsep,topsep=0pt]
+			\item Brief description of the project; What was your role if multi-member team. 
+			\item What was the end result of doing this project.
+		\end{itemize}
+	
+	\end{itemize}
+
+	\resheading{\textbf{SKILLS} }\\[-0.3cm]
+	\begin{itemize}
+		\item \noindent \textbf{Something} Item1, Item2,...\\
+		\textbf{Something} Item1, Item2,... .
+	\end{itemize}
+
+	\resheading{\textbf{ACADEMIC ACHIEVEMENTS AND AWARDS} }\\[-0.4cm]
+	\\ \\
+	\indent 
+	\begin{tabular}
+		{ l @{\hskip 0.15in} l @{\hskip 0.15in} l @{\hskip 0.15in} l @{\hskip 0.15in} l }
+		20XX         & {Achievement}  & Domain.\\
+		20XX         & {Achievement}  & Domain.\\
+		20XX         & {Achievement}  & Domain.\\
+		20XX         & {Achievement}  & Domain.\\
+		20XX         & {Achievement}  & Domain.\\
+	\end{tabular}
+
+	\resheading{\textbf{POSITIONS OF RESPONSIBILITY} }\\[-0.4cm]
+	\begin{itemize}
+		\item As Coordinator (Event X) for ABC Year X- all India inter-collegiate cultural festival\\[\lsep]
+		\begin{itemize}[noitemsep,topsep=0pt]
+			\item What was your role in this position 
+			\item Did you achieve any recognition for your role.
+		\end{itemize}
+		
+		\item XYZ, the student post of the resident/ society (n+ inmates)\\[\lsep]
+		\begin{itemize}[noitemsep,topsep=0pt]
+			\item What was your role in this position 
+			\item Did you achieve any recognition for your role.
+		\end{itemize}
+
+	\end{itemize}
+
+
+	\resheading{\textbf{EXTRA-CURRICULAR ACTIVITIES AND ACHIEVEMENTS} }\\[-0.4cm]
+	\indent 
+	
+	\begin{itemize}[noitemsep]
+		\item \noindent Won X ; X awards in X club / society, year X
+		\item \noindent Member of XYZ sports team for College / resident and won X medal in X tournament, year X
+		\item \noindent Other free time interests.
+	\end{itemize}
+	
+	\resheading{\textbf{OTHER INFORMATION} }\\[-0.4cm]
+	\begin{itemize}
+		\item \noindent Other Information
+	\end{itemize}
+
+	\resheading{\textbf{DECLARATION} }\\[-0.5cm]
+	\begin{itemize}
+		\item \noindent I hereby declare that the details furnished above are true and correct to the best of my knowledge and belief.
+	\end{itemize}
+
+\end{document}
+
+
